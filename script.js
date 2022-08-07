@@ -1,3 +1,4 @@
 'use strict';
 
-const submitBtn = 
+const submitBtn = document.querySelector('.submit');
+const thankYou = document.querySelector('.thank-you');
