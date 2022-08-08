@@ -13,14 +13,15 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	font-family: 'Overpass', sans-serif;
 	width: 100%;
 	max-width: 1440px;
 	font-size: 15px;
 }
 .container {
-	min-width: 400px;
-	width: 50%;
+	max-width: 450px;
+
 	height: 450px;
 	margin: 0 auto;
 	background-color: hsl(213, 19%, 18%);
@@ -63,6 +64,7 @@ h1 {
 .circle {
 	width: 60px;
 	height: 60px;
+	border: none;
 	border-radius: 50%;
 	background-color: hsl(213, 19%, 28%);
 	display: flex;
@@ -71,13 +73,12 @@ h1 {
 	color: hsl(217, 12%, 63%);
 	font-size: 18px;
 }
-.circle:hover,
-.circle:focus {
+.circle:hover {
 	background-color: hsl(216, 12%, 54%);
 	color: #fff;
 	cursor: pointer;
 }
-.circle.active {
+.circle:focus {
 	color: #fff;
 	background-color: hsl(25, 97%, 53%);
 	cursor: pointer;
