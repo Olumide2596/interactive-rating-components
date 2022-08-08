@@ -11,6 +11,7 @@ circles.forEach((circle, i) =>
 	circle.addEventListener('click', () => {
 		// circle.classList.toggle('active');
 		// used :focu on the css to solve
+		// circle.toggleAttribute('focus');
 		rating.textContent = `${i + 1}`;
 	})
 );
