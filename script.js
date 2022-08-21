@@ -9,7 +9,8 @@ const submitText = document.querySelector('.submit-p');
 
 circles.forEach((circle, i) =>
 	circle.addEventListener('click', () => {
-		// circle.classList.toggle('active');
+		circles.forEach(circle => circle.classList.remove('active'));
+		circle.classList.add('active');
 		// used :focu on the css to solve
 		// circle.toggleAttribute('focus');
 		rating.textContent = `${i + 1}`;

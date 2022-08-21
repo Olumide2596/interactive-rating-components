@@ -78,7 +78,7 @@ h1 {
 	color: #fff;
 	cursor: pointer;
 }
-.circle:focus {
+.circle.active {
 	color: #fff;
 	background-color: hsl(25, 97%, 53%);
 	cursor: pointer;
